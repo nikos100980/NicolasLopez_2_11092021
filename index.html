@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9bba343d7c.js"
+      crossorigin="anonymous"> logo</script>
+    <title>Reservia</title>
+  </head>
+  <body>
+      <!-- Mise en place du header avec son nav -->
+    <header>
+      <img src="/images/logo/Reservia@3x.png" alt="logo Reservia" />
+      <nav id="header">
+        <ul>
+          <li><a href="#hebergements">Hébergements</a></li>
+          <li><a href="#activités">Activités</a></li>
+          <li><a href="#inscrire">S'inscrire</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Début du contenu principal de notre site décomposé en 3 partie -->
+    <main>
+        <!-- Premiere partie integrant les elements de recherche de logements et des filtres de recherche -->
+        <div>
+            <div>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            <form action="#">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" name=text class="search" placeholder="Ville, Pays">
+                <input type="submit" name="submit" class="submit" value="Rechercher">
+            </form>
+            <div>
+                <h2>Filtres</h2>
+                <nav id="filtre">
+                    <ul>
+                        <li><i class="fas fa-money-bill-wave"></i>Economique</li>
+                        <li><i class="fas fa-child"></i>Familial</li>
+                        <li><i class="fas fa-heart"></i>Romantique</li>
+                        <li><i class="fas fa-dog"></i>Animaux autorisés</li>
+                    </ul>
+
+                </nav>
+                <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+            <!-- Deuxieme partie integrant 2 sous ensembles ( une section et son aside) -->
+            <section>
+                <h2> Hébergements à Marseille</h2>
+                <div>
+                    <div>
+                        <div>
+                            <div class="visuel-logement">
+                                <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la canebiere">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de 25€ </p>
+
+                            </div>
+                            <div class="visuel-logement">
+                                <img src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de 52€</p>
+                            </div>
+                            <div class="visuel-logement">
+                                <img src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel Les mouettes">
+                                <h3>Hôtel Les mouettes</h3>
+                                <p>Nuit à partir de 76€</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="visuel-logement">
+                                <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de 46€</p>
+                            </div>
+                            <div class="visuel-logement">
+                                <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                                <h3>Auberge Le Panier</h3>
+                                <p>Nuit à partir de 23€</p>
+                            </div>
+                            <div class="visuel-logement">
+                                <img src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                                <h3>Hôtel chez Amina</h3>
+                                <p>Nuit à partir de 96€</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#">Afficher plus</a>
+                        </div>
+
+                    </div>
+                    <aside>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </aside>
+                </div>
+                
+            </section>
+
+        </div>
+    </main>
+  </body>
+</html>
