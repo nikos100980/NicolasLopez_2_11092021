@@ -1,0 +1,7 @@
+@font-face {
+    font-family: Raleway, cursive;
+    src: url(/police/Raleway-VariableFont_wght.ttf);
+}
+body{
+    font-family: raleway,cursive;
+}
