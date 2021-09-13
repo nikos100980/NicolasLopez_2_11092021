@@ -25,15 +25,18 @@
     <!-- Début du contenu principal de notre site décomposé en 3 partie -->
     <main>
         <!-- ******Premiere partie integrant les elements de recherche de logements et des filtres de recherche******* -->
-        <div id="elements_de_recherche">
+        <div id="conteneur-recherche">
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <form action="#">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" name=text class="search" placeholder="Ville, Pays">
-                <input type="submit" name="submit" class="submit" value="Rechercher">
+                <div>
+                    <span class="validity"><i class="fas fa-map-marker-alt"></i></span>
+                    <input type="search" name=q id="search" value="Marseille, France" required>
+                    <button>Rechercher</button>
+                </div>  
+               
             </form>
             <div>
                 <h2>Filtres</h2>
@@ -51,7 +54,7 @@
         </div>   
             <!-- *************Deuxieme partie integrant 2 sous ensembles ( une section et son aside)***************** -->
         <section>
-                <h2> Hébergements à Marseille</h2>
+                <h2 id="hebergements"> Hébergements à Marseille</h2>
                 <div>
                     <div>
                         <div class="logements">
@@ -122,7 +125,7 @@
         <section>
             <!-- ********troisième partie concernant la zone "Activités à Marseille composé de plusieurs div"********* -->
             
-            <h2>Activités à Marseille</h2>
+            <h2 id="activités">Activités à Marseille</h2>
             <div >
                 <div class="grande-photo">
                     <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
