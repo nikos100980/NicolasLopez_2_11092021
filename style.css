@@ -2,6 +2,71 @@
     font-family: Raleway, cursive;
     src: url(/police/Raleway-VariableFont_wght.ttf);
 }
+
 body{
     font-family: raleway,cursive;
+    width: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    
+}
+.filtre{
+    display: flex;
+    align-content: center;
+    margin: 20px;
+    padding-right: 20px;
+    
+}
+.zone-filtre{
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+    
+}
+.item-filtre{
+    display: flex;
+    align-items: center;
+    border: #F2F2F2 solid 2px;
+    border-radius: 26px;
+    padding-right: 20px ;
+    height: 48px;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-right: 5px;
+    position: relative;
+    
+}
+.icone-filtre{
+    color:#0065FC;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 15px;
+    
+    
+    
+    
+}
+.Nom-filtre{
+    padding-right: 20px;
+    padding-left: 70px;
+    
+    
+}
+.icone{
+    height: 48px;
+    border: solid 2px #DEEBFF ;
+    border-radius: 52px;
+    width: 48px;
+    background-color: #DEEBFF ;
+    text-align: center;
+    margin-right: 2px;
+    padding-right: 2px;
+    position: absolute;
+    
+    
+    
+    
+    
+    
 }
