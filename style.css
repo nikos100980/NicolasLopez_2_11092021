@@ -1,28 +1,63 @@
 @font-face {
-    font-family: Raleway, cursive;
+    font-family: 'Raleway';
     src: url(/police/Raleway-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
-
+#global-page-{
+    width: 100vh;
+    margin: auto;
+    
+}
+/* ************************************Parametres géneraux*********************************************** */
 body{
     font-family: raleway,cursive;
-    width: 100vh;
-    margin-left: 100px;
-    margin-right: 100px;
+    width:1480px;
+    margin: auto;
+    
     
     
 }
+/* *************************************En-tête de la page*********************************************** */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+#Nom-site{
+    width: 140px;
+    
+}
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    padding-right: 15px;
+    list-style-type: none;
+}
+nav a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: #0065FC;
+    font-size: 20px;
+    margin-left: 40px;
+}
+#inscrire{
+    font-weight: bold;
+}
+
+/* **************************************Zone de recherche + filtres************************************* */
 .filtre{
     display: flex;
     align-content: center;
     margin: 20px;
     padding-right: 20px;
-    
+    width: 100%;
 }
 .zone-filtre{
     display: flex;
     padding-right: 20px;
     align-items: center;
-    
 }
 .item-filtre{
     display: flex;
@@ -35,23 +70,16 @@ body{
     margin-left: 20px;
     margin-right: 5px;
     position: relative;
-    
 }
 .icone-filtre{
     color:#0065FC;
     font-size: 21px;
     text-align: center;
     margin-top: 15px;
-    
-    
-    
-    
-}
+    }
 .Nom-filtre{
     padding-right: 20px;
     padding-left: 70px;
-    
-    
 }
 .icone{
     height: 48px;
@@ -63,10 +91,5 @@ body{
     margin-right: 2px;
     padding-right: 2px;
     position: absolute;
-    
-    
-    
-    
-    
-    
 }
+/* ************************************Contenus des héberegements et activités + aside************************* */
