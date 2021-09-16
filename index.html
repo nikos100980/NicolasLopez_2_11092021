@@ -5,46 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/9bba343d7c.js"
       crossorigin="anonymous"> logo</script>
     <title>Reservia</title>
   </head>
   <body>
-      <div id="global-page">
+    
 
       <!--******************* Mise en place du header avec son nav********************* -->
     <header>
-        <div>
-            <img src="/images/logo/Reservia.svg" id="Nom-site" alt="logo Reservia" />
-        </div>
-      
-      <nav >
-        <ul id="nav-bar" >
-          <li><a href="#hebergements">Hébergements</a></li>
-          <li><a href="#activités" id="">Activités</a></li>
-          <li><a href="#inscrire" id="inscrire">S'inscrire</a></li>
-        </ul>
+        
+        <nav class="section-nav" >
+            
+            <div class="nav-bar" >
+                <img src="/images/logo/Reservia.svg" id="Nom-site" alt="logo Reservia" />
+                <a href="#hebergements" class="lien-nav-bleue">Hébergements</a>
+                <a href="#activités" class="lien-nav-bleue">Activités</a>
+                <a href="#inscrire" class="lien-nav-bleue-gras">S'inscrire</a>
+            </div>
       </nav>
     </header>
     <!-- Début du contenu principal de notre site décomposé en 3 partie -->
     <main>
         <!-- ******Premiere partie integrant les elements de recherche de logements et des filtres de recherche******* -->
-        <div id="conteneur-recherche">
+        <div class="conteneur-recherche">
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <form action="#">
-                <div>
-                    <span class="validity"><i class="fas fa-map-marker-alt"></i></span>
-                    <input type="search" name=q id="search" value="Marseille, France" required>
-                    <button>Rechercher</button>
+            
+                <div class="recherche">
+                    <div class="recherche-marseille-epingle"><i class="fas fa-map-marker-alt "></i></div>
+                    <div class="texte-recherche"><input type="search" name=q class="recherche-marseille-texte" placeholder= "Marseille, France"></div>
+                    <div class="bouton-marseille">Rechercher</div>
                 </div>  
                
-            </form>
+            
             <div class="filtre" >
-                <div><h3>Filtres</h3></div>
+                <div class="titre-filtre"><h3>Filtres</h3></div>
                 <div class="zone-filtre">
                     
                         <div class="item-filtre">
@@ -76,7 +78,7 @@
                 
         </div>   
             <!-- *************Deuxieme partie integrant 2 sous ensembles ( une section et son aside)***************** -->
-        <section>
+        <section class="hebergements-marseille">
                 <h2 id="hebergements"> Hébergements à Marseille</h2>
                 <div>
                     <div>
@@ -145,7 +147,7 @@
                         
                     </aside>
         </section>
-        <section>
+        <section class="activités-marseille">
             <!-- ********troisième partie concernant la zone "Activités à Marseille composé de plusieurs div"********* -->
             
             <h2 id="activités">Activités à Marseille</h2>
@@ -187,8 +189,8 @@
         
     </main>
     <!-- *****************************Enfin mise en place du footer********************************* -->
-    <footer>
-        <div>
+    <footer >
+        <div class="zone-footer">
             <h3>A propos</h3>
             <ul>
                 <li><a href="#">Fonctionnement du site</a></li>
@@ -213,6 +215,6 @@
             </ul>
         </div>
     </footer>
-    </div>  
+     
   </body>
 </html>

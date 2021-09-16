@@ -1,63 +1,176 @@
-@font-face {
-    font-family: 'Raleway';
+/@font-face { 
+    font-family: Raleway, sans-serif;
     src: url(/police/Raleway-VariableFont_wght.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-#global-page-{
-    width: 100vh;
-    margin: auto;
     
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    
+
 }
 /* ************************************Parametres géneraux*********************************************** */
 body{
-    font-family: raleway,cursive;
-    width:1480px;
-    margin: auto;
-    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: black;
+    width: 100%;
     
     
 }
+h1,h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+h3{
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+a{
+    cursor: pointer;
+    color: black;
+
+}
+
 /* *************************************En-tête de la page*********************************************** */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
+ .section-nav
+ .conteneur-recherche
+ .zone-footer
+ .activités-marseille
+ .hebergements-marseille{
+    
+    padding: 0rem 2.5vw;
+     
+ }
+.section-nav {
+   margin-bottom: 2.5em; 
+    
 }
 #Nom-site{
     width: 140px;
+    padding-top: 40px;
     
 }
-#nav-bar{
-    display: flex;
-    flex-direction: row;
-    padding-right: 15px;
+.nav-bar{
+    display: grid;
+    grid-template-columns: 1fr repeat(3,160px);
+    justify-content: center;
+    align-items: center;
+    padding: 0px 48px;
     list-style-type: none;
+    text-decoration: none;
+    width: 95%;
 }
 nav a{
-    padding-right: 20px;
+    
+    padding-top: 50px;
+    padding-bottom: 28px;
     text-decoration: none;
-    color: #0065FC;
-    font-size: 20px;
-    margin-left: 40px;
+    
+    
+    
+    text-align: center;
 }
-#inscrire{
+.lien-nav-bleue:hover{
+    
+    border-top: #0065FC solid 2px;
+    color: #0065FC
+
+}
+.lien-nav-bleue-gras{
+
     font-weight: bold;
+    color: #0065FC;
 }
 
 /* **************************************Zone de recherche + filtres************************************* */
+
+.conteneur-recherche{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 95%;
+    padding: 0px 48px;
+    margin-bottom: 32px;
+}
+.recherche{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    
+    
+    
+    
+    
+}
+.recherche-marseille-epingle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color:#F2F2F2 ;
+    border: #DEEBFF solide 1px;
+    border-radius: 20px 0px 0px 20px;
+    
+    
+}
+.recherche-marseille-texte{
+    border: none;
+    font-size: 18px;
+    color: black;
+    width: 2
+    font-weight: bold;
+    padding-left:8px;
+    border-bottom: #F2F2F2 0.5px solid;
+}
+.texte-recherche{
+    display: flex;
+    height: 50p
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border-top: #F2F2F2 1px solid;
+    
+    
+}
+.bouton-marseille{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width:120px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: #0065FC;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.
 .filtre{
     display: flex;
     align-content: center;
+    
+    flex-wrap: wrap;
     margin: 20px;
     padding-right: 20px;
     width: 100%;
+    
 }
 .zone-filtre{
     display: flex;
     padding-right: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 .item-filtre{
     display: flex;
@@ -82,6 +195,9 @@ nav a{
     padding-left: 70px;
 }
 .icone{
+    
+    
+    
     height: 48px;
     border: solid 2px #DEEBFF ;
     border-radius: 52px;
@@ -92,4 +208,5 @@ nav a{
     padding-right: 2px;
     position: absolute;
 }
+
 /* ************************************Contenus des héberegements et activités + aside************************* */
