@@ -1,8 +1,4 @@
-/@font-face { 
-    font-family: Raleway, sans-serif;
-    src: url(/police/Raleway-VariableFont_wght.ttf);
-    
-}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,7 +7,7 @@
 }
 /* ************************************Parametres géneraux*********************************************** */
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.2;
@@ -30,7 +26,7 @@ h3{
     font-weight: 600;
     line-height: 1.2;
 }
-a{
+a,.bouton-marseille{
     cursor: pointer;
     color: black;
 
@@ -66,8 +62,9 @@ a{
     width: 95%;
 }
 nav a{
-    
-    padding-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 53px;
     padding-bottom: 28px;
     text-decoration: none;
     
@@ -92,8 +89,9 @@ nav a{
 .conteneur-recherche{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 250px;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 300px;
     width: 95%;
     padding: 0px 48px;
     margin-bottom: 32px;
@@ -125,14 +123,13 @@ nav a{
     border: none;
     font-size: 18px;
     color: black;
-    width: 2
+    
     font-weight: bold;
     padding-left:8px;
     border-bottom: #F2F2F2 0.5px solid;
 }
 .texte-recherche{
     display: flex;
-    height: 50p
     width: 230px;
     font-size: 18px;
     color: black;
@@ -155,15 +152,18 @@ nav a{
     border-radius: 0px 20px 20px 0px;
 }
 
-.
+
 .filtre{
     display: flex;
-    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     
     flex-wrap: wrap;
-    margin: 20px;
+    height: 100px;
+    margin: 20p;
     padding-right: 20px;
-    width: 100%;
+    width: 54%
     
 }
 .zone-filtre{
@@ -180,7 +180,7 @@ nav a{
     padding-right: 20px ;
     height: 48px;
     font-size: 1em;
-    margin-left: 20px;
+    margin-left: 20;
     margin-right: 5px;
     position: relative;
 }
