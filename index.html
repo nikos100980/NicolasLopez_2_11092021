@@ -17,67 +17,96 @@
     
 
       <!--******************* Mise en place du header avec son nav********************* -->
-    <header>
+    
         
         <nav class="section-nav" >
             
-            <div class="nav-bar" >
-                <img src="/images/logo/Reservia.svg" id="Nom-site" alt="logo Reservia" />
-                <a href="#hebergements" class="lien-nav-bleue">Hébergements</a>
-                <a href="#activités" class="lien-nav-bleue">Activités</a>
-                <a href="#inscrire" class="lien-nav-bleue-gras">S'inscrire</a>
+            <div class="header" >
+                <div class="SiteName">
+                    <img class="logoName" src="/images/logo/Reservia.svg"  alt="logo Reservia">
+                </div>
+                <div class="NaviBar"> 
+                    <div class="Nav-blue">
+                        <a class="lien-nav-blue" href="#hebergements" >Hébergements</a>
+                    </div>
+                    <div class="Nav-blue">
+                        <a class="lien-nav-blue" href="#activités" >Activités</a>
+                    </div>
+                        
+                    <div class="Nav-bold"> 
+                        <a class="lien-nav-bold" href="#inscrire" >S'inscrire</a>
+                    </div>
+                </div>
             </div>
       </nav>
-    </header>
+    
     <!-- Début du contenu principal de notre site décomposé en 3 partie -->
-    <main>
+    <header>
         <!-- ******Premiere partie integrant les elements de recherche de logements et des filtres de recherche******* -->
-        <div class="conteneur-recherche">
-            <div>
+        <div class="Search-container">
+            <div class="Title-search">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             
-                <div class="recherche">
-                    <div class="recherche-marseille-epingle"><i class="fas fa-map-marker-alt "></i></div>
-                    <div class="texte-recherche"><input type="search" name=q class="recherche-marseille-texte" placeholder= "Marseille, France"></div>
-                    <div class="bouton-marseille">Rechercher</div>
+                <div class="search">
+                    <div class="point-map"><i class="fas fa-map-marker-alt "></i></div>
+                    <div class="textarea"><input type="search" name=q class="input-search" value= "Marseille, France"></div>
+                    <div class="button-search">Rechercher</div>
                 </div>  
                
             
-            <div class="filtre" >
-                <div class="titre-filtre"><h3>Filtres</h3></div>
-                <div class="zone-filtre">
+            <div class="Filter-area" >
+                <div class="Title-filter">
+                    <h2>Filtres</h2>
+                </div>
+                <div class="items-filter">
                     
-                        <div class="item-filtre">
-                            <div class="icone"><i class="fas fa-money-bill-wave icone-filtre"></i></div>
-                            <div class="Nom-filtre"><h3>Économique</h3></div>
+                        <div class="Button-filter">
+                            <div class="Filter-icone"><i class="fas fa-money-bill-wave icone-filtre"></i>
+                            </div>
+                            <div class="Filter-name">
+                                <h2>Économique</h2>
+                            </div>
                         </div>
-                        <div class="item-filtre">
-                            <div class="icone"><i class="fas fa-child icone-filtre"></i></div>
-                            <div class="Nom-filtre"><h3>Familial</h3></div>
+                        <div class="Button-filter">
+                            <div class="Filter-icone"><i class="fas fa-child icone-filtre"></i>
+                            </div>
+                            <div class="Filter-name">
+                                <h2>Familial</h2>
+                            </div>
 
                         </div>
-                        <div class="item-filtre">
-                            <div class="icone"><i class="fas fa-heart icone-filtre"></i></div>
-                            <div class="Nom-filtre"><h3>Romantique</h3></div>
+                        <div class="Button-filter">
+                            <div class="Filter-icone"><i class="fas fa-heart icone-filtre"></i>
+                            </div>
+                            <div class="Filter-name">
+                                <h2>Romantique</h2>
+                            </div>
 
                         </div>
-                        <div class="item-filtre">
-                            <div class="icone"><i class="fas fa-dog icone-filtre"></i></div>
-                            <div class="Nom-filtre"><h3>Animaux autorisés</h3></div>
+                        <div class="Button-filter">
+                            <div class="Filter-icone"><i class="fas fa-dog icone-filtre"></i>
+                            </div>
+                            <div class="Filter-name">
+                                <h2>Animaux autorisés</h2>
+                            </div>
 
                         </div>
                         
                 </div>
                 
             </div>
-            <div>
-                <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="info-circle">
+                <div class="Icon-info"><i class="fas fa-info fa-xs"></i></div>
+                <div class="Text-info"><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
             </div>   
                 
-        </div>   
-            <!-- *************Deuxieme partie integrant 2 sous ensembles ( une section et son aside)***************** -->
+        </div>  
+    </header>    
+          <!-- *************Deuxieme partie integrant 2 sous ensembles ( une  section et son aside)***************** -->
+    
+    <main>    
         <section class="hebergements-marseille">
                 <h2 id="hebergements"> Hébergements à Marseille</h2>
                 <div>
