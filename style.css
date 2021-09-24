@@ -10,7 +10,7 @@ html,body{
     font-family: 'Raleway', sans-serif;
     color: black;
     line-height: 1.6;
-    width: 100%;
+    max-width: 100vw;
 }
 p,li{
     font-size: 0.8rem;
@@ -20,7 +20,8 @@ h1{
     font-weight: 600;
 }
 h2{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
 
 }
 
@@ -53,7 +54,7 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
+    width: 20%;
     height: 100px;
     
 }
@@ -96,8 +97,9 @@ h2{
 
 .Search-container{
     width: 80%;
-    height: 400px;
+    height: 220px;
     padding-left: 30px;
+    margin-bottom: 15px;
     
 }
 .Title-search{
@@ -163,10 +165,9 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
     width: 76%;
     height: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     
 
 }
@@ -224,12 +225,13 @@ h2{
 .info-circle {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 20px;
     width: 100%;
+    
     
 }
 .Text-info{
-    height: 40px;
+    height: 20px;
     display: flex;
     align-items: center;
     padding-left: 10px;
@@ -245,3 +247,164 @@ h2{
     border-radius: 25px;
     color: #0065FC;
 }
+/* Partie section Hébergements */
+.Hebergements-marseille{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+.Hebergements{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 70%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding:15px;
+    margin-right: 20px;
+    height: 700px;
+}
+.logements{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    
+}
+.visuel-logement{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 25%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px;
+    
+}
+
+.Visual-Card1{
+    background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    width: 100%;
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+    
+}
+.Visual-Card2{
+    background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    width: 100%;
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+    
+}
+.Visual-Card3{
+    background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    width: 100%;
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+    
+}
+.Visual-Card4{
+    background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    width: 100%;
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+    
+}
+.Visual-Card5{
+    background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    width: 100%;
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+    
+}
+.Visual-Card6{
+    background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    width: 100%;
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+    
+}
+.Title-Card{
+    
+    width: 100%;
+    padding-left: 10px;
+
+}
+.fa-star{
+    color: #0065FC
+}
+.deactivated{
+    color: #F2F2F2;
+}
+/* Mise en forme de l'aside */
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+.Title-pop{
+    width: 85%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.Pop-card{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 85%;
+    height: 150px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px;
+}
+.Visual-pop1{
+    background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    width: 40%;
+    height: 140px;
+    border-radius: 15px 0 0 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+ .Visual-pop2{
+    background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    width: 40%;
+    height: 140px;
+    border-radius: 15px 0 0 15px;
+    background-size: cover;
+    background-position: center;  
+ }
+.Visual-pop3{
+        background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+        width: 40%;
+        height: 140px;
+        border-radius: 15px 0 0 15px;
+        background-size: cover;
+        background-position: center; 
+}
+.Pop-location{
+    width: 40%;
+    padding-left:20px ;
+}        
