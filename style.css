@@ -25,6 +25,7 @@ h2 {
 h3 {
   font-size: 1rem;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 a {
   text-decoration: none;
@@ -33,7 +34,7 @@ a {
 
 /* Mis en forme du menu de navigation */
 .section-nav {
-  width: 97%;
+  width: 100%;
 }
 .header {
   display: flex;
@@ -50,14 +51,14 @@ a {
 .SiteName {
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 93%;
   height: 100px;
 }
 .NaviBar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 20%;
+  width: 50%;
   height: 100px;
 }
 .Nav-blue,
@@ -65,7 +66,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 160px;
+  width: 170px;
   height: 100px;
   text-decoration: none;
 }
@@ -74,7 +75,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 160px;
+  width: 170px;
   height: 100px;
   text-decoration: none;
   color: black;
@@ -390,38 +391,120 @@ aside {
 /* Mis en place de la partie Activités à Marseille
  */
  
- .activités-marseille{
+ .Activity-marseille{
      width: 100%;
-     background-color: yellowgreen;
+     padding: 20px;
      display: flex;
      flex-direction: column;
-     height: 700px;
+     height: 756px;
  }
- .Activity-card{
-     width: 100%;
-     height: 620px;
-     display: flex;
-     justify-content: space-around;
- }
- .Big-card,
- .Double-card{
-  width: 16%;
-  height: 500px;
-  background-color: white;
-  
-  
-     
-}
-.Image-card1
-{
+ .Bloc-activityMarseille{
     width: 100%;
-    height: 90%;
-   
-   
+    height: 45px; 
 }
-.Size-image{
+
+ .Bloc-card{
+     width: 100%;
+     height: 600px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .Activity-bloc14
+ {
+  width: 20%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+ } 
+  
+  
+.Size-image14{
     
     width: 100%;
-    height: 100%;
-   object-fit: cover;
+    height: 756px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
+.Title-activity{
+    height: 70px;
+    width: 95%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Activity-bloc2356
+ {
+  width: 20%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  
+ } 
+.Little-card26{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    
+    
+}
+.Little-card35{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.Size-image26{
+    
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.Size-image35{
+    
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+/* Fin de la section Activités à Marseille */
+
+/* Mis en place du footer */
+footer{
+    width: 100%;
+    height: 160px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+}
+.Bloc-footer{
+    width: 30%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.Bloc-footer ul{
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+/* Fin de la mise en forme du Footer */
