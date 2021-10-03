@@ -1,16 +1,18 @@
 /* Parametres globaux */
-* {
+@import url(./responsive.css);
+
+*{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-html,
+
 body {
   font-family: "Raleway", sans-serif;
   color: black;
   line-height: 1.6;
-  max-width: 100vw;
+  
 }
 p,
 li {
@@ -35,38 +37,46 @@ a {
 /* Mis en forme du menu de navigation */
 .section-nav {
   width: 100%;
+  padding: 0 30px;
+  height: 100px;
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  
   width: 100%;
 }
 .logoName {
-  height: 50px;
-  width: 120px;
-  padding: 10px 0px 0px 30px;
+  height: 60px;
+  width: 100px;
+  
 }
 .SiteName {
   display: flex;
   align-items: center;
-  width: 93%;
+  width: 100%;
   height: 100px;
 }
-.NaviBar {
+/* .NaviBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  height: 100px;
+  width: 45%;
+  height: 100px; 
+}  */
+
+.Nav-mobile {
+  display: flex;
+  margin-left: 60%;
+  justify-content: center;
 }
 .Nav-blue,
 .Nav-bold {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 140px;
   height: 100px;
   text-decoration: none;
 }
@@ -91,18 +101,27 @@ a {
 
   border-top: #0065fc solid 2px;
 }
-/* Mis en forme du header avec le menu de recherche  */
 
+
+/* Mis en forme du header avec le menu de recherche  */
+header{
+  width: 100%;
+  height: 300px;
+}
 .Search-container {
-  width: 80%;
-  height: 220px;
-  padding-left: 30px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 0 30px;
   margin-bottom: 15px;
 }
 .Title-search {
   width: 100%;
-  height: 50px;
-  margin-bottom: 15px;
+  height: 54px;
+  
 }
 
 .search {
@@ -153,29 +172,29 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 76%;
-  height: 50px;
+  height: 70px;
   margin-bottom: 20px;
 }
 .Title-filter {
   display: flex;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   margin-right: 20px;
 }
 .items-filter {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 50px;
+  height: 70px;
 }
 .Button-filter {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 45px;
+  margin-left: 40px;
   border: #f2f2f2 solid 2px;
   border-radius: 30px;
   position: relative;
@@ -185,13 +204,13 @@ a {
   justify-content: center;
   align-items: center;
   color: #0065fc;
-  font-size: 15px;
-  width: 40px;
-  height: 40px;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
   border-radius: 42px;
   background-color: #deebff;
   position: absolute;
-  left: -1px;
+  left: -4px;
   cursor: pointer;
 }
 .Filter-icone:hover {
@@ -199,7 +218,7 @@ a {
   background-color: #0065fc;
 }
 .Filter-name {
-  padding-left: 50px;
+  padding-left: 58px;
   padding-right: 20px;
 }
 
@@ -229,13 +248,16 @@ a {
 
 .Hebergements-marseille {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  margin: 20px 20px;
+  align-items: center;
+  padding: 0 30px;
+  margin-top: 20px;
 }
 .Title-section {
-  width: 90%;
-  height: 50px;
-  padding-top: 20px;
+  width: 95%;
+  height: 51px;
+  padding-top: 17px;
   text-decoration: none;
 }
 .Hebergements {
@@ -243,10 +265,10 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 64%;
   background-color: #f2f2f2;
   border-radius: 15px;
-  padding: 5px;
+  padding: 10px;
   margin-right: 40px;
   height: 700px;
 }
@@ -255,15 +277,15 @@ a {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
+  width: 98%;
   height: 300px;
 }
 .visuel-logement {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  width: 25%;
-  height: 210px;
+  
+  width: 30%;
+  height: 256px;
   border-radius: 20px;
   background-color: white;
   padding: 5px;
@@ -271,10 +293,12 @@ a {
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.027);
 }
 
-.Visual-Card1 {
+
+.Visual-Card1
+{
   object-fit: cover;
   width: 100%;
-  height: 130px;
+  height: 177px;
   border-radius: 15px 15px 0 0;
 }
 
@@ -295,23 +319,28 @@ aside {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 30%;
+  width: 33%;
   background-color: #f2f2f2;
   border-radius: 15px;
+  height: 700px;
+  padding: 10px;
 }
 .Title-pop {
   width: 85%;
-  height: 50px;
+  height: 40px;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  align-items: center;
+  padding-top: 10px;
 }
 .Pop-card {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  width: 87%;
-  height: 170px;
+  width: 90%;
+  min-width: auto;
+  height: 186px;
+  min-height: auto;
   border-radius: 20px;
   background-color: white;
   padding: 5px;
@@ -320,8 +349,9 @@ aside {
 }
 .Visual-pop {
   object-fit: cover;
-  width: 30%;
-  height: 160px;
+  width: 41%;
+  height: 176px;
+  min-height: auto;
   border-radius: 15px 0 0 15px;
 }
 
@@ -337,10 +367,11 @@ aside {
 
 .Activity-marseille {
   width: 100%;
-  padding: 20px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   height: 756px;
+  margin-top: 40px;
 }
 .Bloc-activityMarseille {
   width: 100%;
@@ -354,8 +385,8 @@ aside {
   justify-content: space-between;
 }
 .Activity-bloc14 {
-  width: 20%;
-  height: 600px;
+  width: 22%;
+  height: 530px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -367,12 +398,12 @@ aside {
 
 .Size-image14 {
   width: 100%;
-  height: 530px;
+  height: 480px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .Title-activity {
-  height: 70px;
+  height: 50px;
   width: 95%;
   padding-left: 5%;
   display: flex;
@@ -380,8 +411,8 @@ aside {
   align-items: center;
 }
 .Activity-bloc2356 {
-  width: 20%;
-  height: 600px;
+  width: 22%;
+  height: 530px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -390,7 +421,7 @@ aside {
 }
 .Little-card26 {
   width: 100%;
-  height: 270px;
+  height: 275px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -400,7 +431,7 @@ aside {
 }
 .Little-card35 {
   width: 100%;
-  height: 230px;
+  height: 194px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -409,15 +440,20 @@ aside {
 }
 .Size-image26 {
   width: 100%;
-  height: 220px;
+  height: 225px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .Size-image35 {
   width: 100%;
-  height: 180px;
+  height: 144px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
+}
+/* Effet cliquable sur passage des cartes  */
+.visuel-logement:hover,
+.Pop-card:hover{
+  transform: scale(1.05);
 }
 /* Fin de la section Activités à Marseille */
 
@@ -442,3 +478,40 @@ footer {
   height: 72px;
 }
 /* Fin de la mise en forme du Footer */
+
+
+@media screen and (max-width: 1230px) {
+  .Nav-mobile {
+    margin-left: 40%;
+  }
+  .Filter-area{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .Hebergements{
+    min-height: auto;
+  }
+  .logements{
+    min-height: auto;
+  }
+  .visuel-logement{
+    min-height: 150px;
+  }
+  aside{
+    min-height: auto;
+  }
+  .Pop-card{
+    min-height: 150px;
+  }
+}
+@media screen and (max-width: 1132px) {
+  header{
+    min-height: auto;
+  }
+  .Search-container{
+    min-height: auto;
+  }
+  h3{
+    font-size: 0.9rem;
+  }
+}
