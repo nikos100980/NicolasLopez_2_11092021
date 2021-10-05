@@ -1,5 +1,5 @@
 /* Parametres globaux */
-@import url(./responsive.css);
+
 
 *{
   margin: 0px;
@@ -12,6 +12,8 @@ body {
   font-family: "Raleway", sans-serif;
   color: black;
   line-height: 1.6;
+  max-width: 1440px;
+  margin: auto;
   
 }
 p,
@@ -33,7 +35,10 @@ a {
   text-decoration: none;
   color: black;
 }
-
+/* Effet cliquable sur passage des cartes  */
+.Click-effect:hover{
+  transform: scale(1.05);
+}
 /* Mis en forme du menu de navigation */
 .section-nav {
   width: 100%;
@@ -256,8 +261,9 @@ header{
 }
 .Title-section {
   width: 95%;
-  height: 51px;
-  padding-top: 17px;
+  height: 40px;
+  padding-top: 10px;
+  margin-bottom: 30px;
   text-decoration: none;
 }
 .Hebergements {
@@ -270,22 +276,23 @@ header{
   border-radius: 15px;
   padding: 10px;
   margin-right: 40px;
-  height: 700px;
+  height: auto;
 }
 .logements {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  
   width: 98%;
-  height: 300px;
+  height: auto;
+  margin-bottom: 35px;
 }
 .visuel-logement {
   display: flex;
   flex-direction: column;
   
-  width: 30%;
-  height: 256px;
+  width: 245px;
+  height: 200px;
   border-radius: 20px;
   background-color: white;
   padding: 5px;
@@ -298,7 +305,7 @@ header{
 {
   object-fit: cover;
   width: 100%;
-  height: 177px;
+  height: 120px;
   border-radius: 15px 15px 0 0;
 }
 
@@ -317,12 +324,12 @@ header{
 aside {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  
   align-items: center;
   width: 33%;
   background-color: #f2f2f2;
   border-radius: 15px;
-  height: 700px;
+  height: auto;
   padding: 10px;
 }
 .Title-pop {
@@ -332,25 +339,27 @@ aside {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+  margin-bottom: 30px;
 }
 .Pop-card {
   display: flex;
   flex-direction: row;
   align-content: space-between;
   width: 90%;
-  min-width: auto;
-  height: 186px;
-  min-height: auto;
+  
+  height: 150px;
+  
   border-radius: 20px;
   background-color: white;
   padding: 5px;
+  margin-bottom: 30px;
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.027);
   cursor: pointer;
 }
 .Visual-pop {
   object-fit: cover;
-  width: 41%;
-  height: 176px;
+  width: 130px;
+  height: 140px;
   min-height: auto;
   border-radius: 15px 0 0 15px;
 }
@@ -370,8 +379,8 @@ aside {
   padding: 0 30px;
   display: flex;
   flex-direction: column;
-  height: 756px;
-  margin-top: 40px;
+  
+  margin: 40px 0px;
 }
 .Bloc-activityMarseille {
   width: 100%;
@@ -380,13 +389,14 @@ aside {
 
 .Bloc-card {
   width: 100%;
-  height: 600px;
+  height: 450px;
   display: flex;
   justify-content: space-between;
 }
 .Activity-bloc14 {
   width: 22%;
-  height: 530px;
+  height: 454px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -398,21 +408,27 @@ aside {
 
 .Size-image14 {
   width: 100%;
-  height: 480px;
+  position: absolute;
+  height: 99%;
   object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
 }
 .Title-activity {
-  height: 50px;
-  width: 95%;
+  height: 60px;
+  width: 100%;
   padding-left: 5%;
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .Activity-bloc2356 {
   width: 22%;
-  height: 530px;
+  height: 454px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -421,7 +437,8 @@ aside {
 }
 .Little-card26 {
   width: 100%;
-  height: 275px;
+  height: 236px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -431,7 +448,8 @@ aside {
 }
 .Little-card35 {
   width: 100%;
-  height: 194px;
+  height: 171px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -440,21 +458,20 @@ aside {
 }
 .Size-image26 {
   width: 100%;
-  height: 225px;
+  height: 99%;
+  position:absolute;
   object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
 }
 .Size-image35 {
   width: 100%;
-  height: 144px;
+  height: 99%;
+  position: absolute;
   object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
 }
-/* Effet cliquable sur passage des cartes  */
-.visuel-logement:hover,
-.Pop-card:hover{
-  transform: scale(1.05);
-}
+
+
 /* Fin de la section Activités à Marseille */
 
 /* Mis en place du footer */
@@ -478,9 +495,17 @@ footer {
   height: 72px;
 }
 /* Fin de la mise en forme du Footer */
+@media screen and (max-width: 1397px){
+  .items-filter{
+    align-content: center;
+    align-items: center;
+  }
+  .Button-filter{
+    margin-bottom: 10px;
+  }
+}
 
-
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1152px) {
   .Nav-mobile {
     margin-left: 40%;
   }
@@ -504,7 +529,7 @@ footer {
     min-height: 150px;
   }
 }
-@media screen and (max-width: 1132px) {
+@media screen and (max-width: 1164px) {
   header{
     min-height: auto;
   }
@@ -513,5 +538,47 @@ footer {
   }
   h3{
     font-size: 0.9rem;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 1071px){
+  /* main{
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  .Hebergements-marseille{
+    flex-wrap: wrap;
+  }
+  .Hebergements{
+    flex-basis: 100%;
+    width: 100%;
+    order: 2;
+    margin-right: 0;
+    background-color: white;
+
+  }
+  aside{
+    width: 100%;
+    flex-basis: 100%;
+    order: 1;
+  }
+  .Bloc-card{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+  }
+}
+@media screen and (max-width: 770px){
+  .Hebergements{
+    
+  }
+  .logements{
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
   }
 }
