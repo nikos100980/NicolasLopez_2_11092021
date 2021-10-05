@@ -18,17 +18,18 @@ body {
 }
 p,
 li {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 h1,
 h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 5px;
 }
 a {
@@ -109,13 +110,10 @@ a {
 
 
 /* Mis en forme du header avec le menu de recherche  */
-header{
-  width: 100%;
-  height: 300px;
-}
+
 .Search-container {
   width: 100%;
-  height: 300px;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -125,17 +123,15 @@ header{
 }
 .Title-search {
   width: 100%;
-  height: 54px;
+  margin-bottom: 20px;
   
 }
 
 .search {
   display: flex;
   align-items: center;
-  height: 45px;
-  width: 100%;
-
   margin-bottom: 20px;
+  width: 100%;
 }
 .point-map {
   display: flex;
@@ -156,6 +152,7 @@ header{
 .input-search {
   border: none;
   height: 43px;
+  width: 186px;
   font-weight: bold;
   color: black;
   padding-left: 10px;
@@ -166,18 +163,20 @@ header{
   align-items: center;
   height: 45px;
   width: 120px;
+  
   border: #0065fc solid 1px;
   background-color: #0065fc;
   color: white;
   border-radius: 0 15px 15px 0;
 }
+.fa-search{
+  display: none;
+}
 
 .Filter-area {
   display: flex;
-  justify-content: space-around;
+  min-width: 491px;
   align-items: center;
-  width: 76%;
-  height: 70px;
   margin-bottom: 20px;
 }
 .Title-filter {
@@ -191,8 +190,7 @@ header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  height: 70px;
+  
 }
 .Button-filter {
   display: flex;
@@ -231,7 +229,8 @@ header{
   display: flex;
   align-items: center;
   height: 20px;
-  width: 100%;
+  margin-bottom: 20px;
+  
 }
 .Text-info {
   height: 20px;
@@ -495,23 +494,36 @@ footer {
   height: 72px;
 }
 /* Fin de la mise en forme du Footer */
-@media screen and (max-width: 1397px){
-  .items-filter{
-    align-content: center;
-    align-items: center;
+
+@media screen and (max-width: 1323px){
+ 
+  .Hebergements-marseille{
+    flex-wrap: wrap-reverse;
   }
-  .Button-filter{
-    margin-bottom: 10px;
+  .Hebergements{
+    width: 100%;
+    margin-right: 0;
+    background-color: white;
+
+  }
+  aside{
+    width: 100%;
+    
+  }
+    .Bloc-card{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
   }
 }
-
 @media screen and (max-width: 1152px) {
   .Nav-mobile {
     margin-left: 40%;
   }
   .Filter-area{
     flex-wrap: wrap;
-    flex-direction: column;
+    
   }
   .Hebergements{
     min-height: auto;
@@ -529,49 +541,22 @@ footer {
     min-height: 150px;
   }
 }
-@media screen and (max-width: 1164px) {
-  header{
-    min-height: auto;
-  }
-  .Search-container{
-    min-height: auto;
-  }
-  h3{
-    font-size: 0.9rem;
-  }
-  p{
-    font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 1071px){
-  /* main{
-    display: flex;
-    flex-wrap: wrap;
-  } */
-  .Hebergements-marseille{
-    flex-wrap: wrap;
-  }
-  .Hebergements{
-    flex-basis: 100%;
-    width: 100%;
-    order: 2;
-    margin-right: 0;
-    background-color: white;
-
-  }
-  aside{
-    width: 100%;
-    flex-basis: 100%;
-    order: 1;
-  }
-  .Bloc-card{
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    
+@media screen and (max-width: 1030px){
+  .Button-filter{
+    margin: 0 20px 10px 0;
   }
 }
 @media screen and (max-width: 770px){
+  .Search-container{
+    padding: 0 20px 0 20px;
+  }
+  .Hebergements-marseille{
+    padding: 0;
+    
+  }
+  aside{
+    border-radius: 0;
+  }
   .Hebergements{
     
   }
@@ -582,3 +567,16 @@ footer {
     
   }
 }
+@media screen and (max-width: 700px){
+  footer{
+    flex-direction: column;
+    padding:37px;
+    height: auto;
+  }
+  .Bloc-footer{
+    height: 135px;
+    width: 100%;
+  }
+}
+
+
