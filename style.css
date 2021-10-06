@@ -551,10 +551,6 @@ footer {
   .Nav-device{
     margin-left: 10%;
   }
-
-}
-
-@media screen and (max-width: 770px){
   .Search-container{
     padding: 0 20px 0 20px;
   }
@@ -565,16 +561,30 @@ footer {
   aside{
     border-radius: 0;
   }
-  .Hebergements{
-    
-  }
+  
   .logements{
     flex-direction: column;
     flex-wrap: wrap;
-    
-    
+    margin-bottom: 0;
   }
+  .visuel-logement{
+    margin-bottom: 20px;
+    width: 90%;
+    height: 259px;
+  }
+  .Visual-Card1{
+    height: 160px;
+    width: 100%;
+  
+  }
+  .Title-Card{
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
 }
+
+
 @media screen and (max-width: 700px){
   footer{
     flex-direction: column;
