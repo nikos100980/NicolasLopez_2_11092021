@@ -30,15 +30,17 @@ h2 {
 h3 {
   font-size: 1rem;
   font-weight: 700;
-  
 }
 a {
   text-decoration: none;
   color: black;
 }
 /* Effet cliquable sur passage des cartes  */
+.Click-effect {
+  transition: 0.2s;
+}
 .Click-effect:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 /* Mis en forme du menu de navigation */
 .section-nav {
@@ -102,7 +104,6 @@ a {
 
 .Search-container {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -111,7 +112,7 @@ a {
   margin-bottom: 15px;
 }
 .Title-search {
-  width: 100%;
+  width: 97%;
   margin-bottom: 20px;
 }
 
@@ -120,20 +121,20 @@ a {
   align-items: center;
   position: relative;
   margin-bottom: 26px;
-  width: 91%;
-  min-width: 332px;
+  width: 100%;
+  min-width: 280px;
 }
 .point-map {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 53px;
-  width: 53px;
+  height: 50px;
+  width: 50px;
   background-color: #f2f2f2;
   border-radius: 13px 0 0 13px;
 }
 .textarea {
-  height: 53px;
+  height: 50px;
   display: flex;
   justify-content: center;
   border-bottom: #f2f2f2 solid 1px;
@@ -141,11 +142,11 @@ a {
 }
 .input-search {
   border: none;
-  height: 50px;
+  height: 48px;
   width: 244px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: black;
   padding-left: 13px;
 }
@@ -153,14 +154,19 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 53px;
+  height: 50px;
   width: 120px;
   font-weight: 700;
-
   border: #0065fc solid 1px;
   background-color: #0065fc;
   color: white;
   border-radius: 0px 15px 15px 0px;
+}
+.button-search:hover {
+  background-color: #deebff;
+  color: #0065fc;
+  border: #deebff solid 1px;
+  transition: 0.5s;
 }
 .Device-search {
   display: none;
@@ -212,6 +218,7 @@ a {
 .Filter-icone:hover {
   color: #deebff;
   background-color: #0065fc;
+  transition: 0.5s;
 }
 .Filter-name {
   padding-left: 51px;
@@ -223,7 +230,6 @@ a {
   margin-bottom: 20px;
 }
 .Text-info {
-  
   display: flex;
   align-items: center;
   padding-left: 10px;
@@ -256,7 +262,7 @@ a {
   margin-bottom: 30px;
   text-decoration: none;
 }
-.Title-section a{
+.Title-section a {
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -276,7 +282,6 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   width: 98%;
   height: auto;
   margin-bottom: 35px;
@@ -284,7 +289,6 @@ a {
 .visuel-logement {
   display: flex;
   flex-direction: column;
-
   width: 245px;
   height: 207px;
   border-radius: 20px;
@@ -337,9 +341,7 @@ aside {
   flex-direction: row;
   align-content: space-between;
   width: 90%;
-
   height: 156px;
-
   border-radius: 20px;
   background-color: white;
   padding: 5px;
@@ -383,7 +385,6 @@ aside {
   width: 100%;
   height: 450px;
   display: flex;
-
   justify-content: space-between;
 }
 .Activity-bloc14 {
@@ -391,7 +392,6 @@ aside {
   height: 454px;
   position: relative;
   display: flex;
-
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -563,16 +563,25 @@ footer {
   }
   .visuel-logement {
     margin-bottom: 20px;
-    width: 90%;
+    width: 70%;
     height: 259px;
   }
   .Visual-Card1 {
-    height: 160px;
+    height: 173px;
     width: 100%;
+  }
+  .Title-section {
+    width: 71%;
   }
   .Title-Card {
     padding-left: 15px;
     padding-top: 10px;
+  }
+  .Title-pop {
+    width: 94%;
+  }
+  .Pop-card {
+    width: 70%;
   }
   .Bloc-card {
     flex-direction: column;
@@ -580,20 +589,23 @@ footer {
     height: auto;
     align-items: center;
   }
+  .Bloc-activityMarseille{
+    padding-left: 107px;
+  }
   .Activity-bloc14 {
-    width: 60%;
+    width: 70%;
     height: 260px;
     margin-bottom: 30px;
   }
   .Activity-bloc2356 {
     width: 100%;
-    height: 520px;
+    height: 580px;
   }
   .Little-card26,
   .Little-card35 {
     height: 260px;
     margin-bottom: 30px;
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -610,6 +622,30 @@ footer {
     height: 135px;
     width: 100%;
   }
+  .Title-section {
+    width: 90%;
+  }
+  .visuel-logement {
+    width: 94%;
+    height: 214px;
+  }
+  .Visual-Card1 {
+    height: 126px;
+  }
+  .Activity-marseille {
+    margin: 0;
+  }
+  .Pop-card {
+    width: 94%;
+  }
+  .Activity-bloc14,
+  .Little-card26,
+  .Little-card35 {
+    height: 214px;
+  }
+  .Activity-bloc2356 {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -622,9 +658,9 @@ footer {
     width: 100%;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    padding:0
+    padding: 0;
   }
-  .SiteName{
+  .SiteName {
     padding-left: 20px;
   }
   .Nav-blue-device {
@@ -639,6 +675,9 @@ footer {
     border-top: 0;
     border-bottom: #0065fc solid 3px;
   }
+  .Bloc-activityMarseille{
+    padding-left: 0;
+  }
   .Activity-bloc14,
   .Little-card26,
   .Little-card35 {
@@ -650,27 +689,62 @@ footer {
     display: none;
   }
   .Device-search {
-    height: 53px;
-    width: 53px;
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 29px;
     border: #0065fc solid 1px;
     background-color: #0065fc;
     color: white;
     border-radius: 13px;
+    cursor: pointer;
   }
-  .Title-section{
+  .Device-search:hover {
+    background-color: #deebff;
+    border: #deebff solid 1px;
+    color: #0065fc;
+    transition: 0.5s;
+  }
+  .Title-section {
     width: 90%;
   }
-  .Activity-marseille{
+  .visuel-logement {
+    width: 94%;
+    height: 214px;
+  }
+  .Visual-Card1 {
+    height: 126px;
+  }
+  .Activity-marseille {
     margin: 0;
   }
-}
-@media screen and (max-width: 425px){
-  .Filter-area{
-    min-width: 0;
+  .Pop-card {
+    width: 94%;
+  }
+  .Activity-bloc14,
+  .Little-card26,
+  .Little-card35 {
+    height: 214px;
+  }
+  .Activity-bloc2356 {
+    height: auto;
   }
 }
+@media screen and (max-width: 425px) {
+  .Filter-area {
+    min-width: 0;
+  }
+  .input-search {
+    width: 213px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .search {
+    min-width: 274px;
+  }
+  .input-search {
+    width: 168px;
+  }
+}
+/* Fin de la mis en forme CSS */
