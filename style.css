@@ -9,7 +9,7 @@
 body {
   font-family: "Raleway", sans-serif;
   color: black;
-  line-height: 1.6;
+  line-height: 1.4rem;
   max-width: 1440px;
   margin: auto;
 }
@@ -30,7 +30,7 @@ h2 {
 h3 {
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 5px;
+  
 }
 a {
   text-decoration: none;
@@ -76,7 +76,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 140px;
-  height: 90px;
+  height: 100px;
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -95,7 +95,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 50%;
+  margin-left: 62%;
 }
 
 /* Mis en forme du header avec le menu de recherche  */
@@ -119,8 +119,9 @@ a {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 32px;
-  width: 100%;
+  margin-bottom: 26px;
+  width: 91%;
+  min-width: 332px;
 }
 .point-map {
   display: flex;
@@ -213,18 +214,16 @@ a {
   background-color: #0065fc;
 }
 .Filter-name {
-  padding-left: 58px;
+  padding-left: 51px;
   padding-right: 20px;
 }
 
 .info-circle {
   display: flex;
-  align-items: center;
-  height: 20px;
   margin-bottom: 20px;
 }
 .Text-info {
-  height: 20px;
+  
   display: flex;
   align-items: center;
   padding-left: 10px;
@@ -232,6 +231,7 @@ a {
 .Icon-info {
   width: 20px;
   height: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,6 +255,10 @@ a {
   padding-top: 20px;
   margin-bottom: 30px;
   text-decoration: none;
+}
+.Title-section a{
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 .Hebergements {
   display: flex;
@@ -320,7 +324,7 @@ aside {
   padding: 10px;
 }
 .Title-pop {
-  width: 90%;
+  width: 88%;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -352,7 +356,7 @@ aside {
 }
 
 .Pop-location {
-  width: 40%;
+  width: 52%;
   padding-left: 20px;
   display: flex;
   flex-direction: column;
@@ -486,10 +490,13 @@ footer {
 /* Fin de la mise en forme du Footer */
 @media screen and (max-width: 1420px) {
   .Nav-device {
-    margin-left: 35%;
+    margin-left: 60%;
   }
 }
 @media screen and (max-width: 1323px) {
+  .Nav-device {
+    margin-left: 53%;
+  }
   .Hebergements-marseille {
     flex-wrap: wrap-reverse;
   }
@@ -526,6 +533,9 @@ footer {
   }
 }
 @media screen and (max-width: 1030px) {
+  .Nav-device {
+    margin-left: 45%;
+  }
   .Button-filter {
     margin: 0 14px 10px 0;
   }
@@ -535,7 +545,7 @@ footer {
     width: 90%;
   }
   .Nav-device {
-    margin-left: 10%;
+    margin-left: 34%;
   }
   .Search-container {
     padding: 0 20px 0 20px;
@@ -549,7 +559,6 @@ footer {
 
   .logements {
     flex-direction: column;
-    flex-wrap: wra;
     margin-bottom: 0;
   }
   .visuel-logement {
@@ -589,6 +598,9 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+  .Nav-device {
+    margin-left: 10%;
+  }
   footer {
     flex-direction: column;
     padding: 37px;
@@ -610,12 +622,17 @@ footer {
     width: 100%;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    padding:0
+  }
+  .SiteName{
+    padding-left: 20px;
   }
   .Nav-blue-device {
     width: 50%;
     border-bottom: #f2f2f2 solid 3px;
   }
-  .lien-nav-blue:hover {
+  .lien-nav-blue:hover,
+  .lien-nav-blue {
     border-top: none;
   }
   .Nav-blue-device:hover {
@@ -628,7 +645,7 @@ footer {
     width: 100%;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .button-search {
     display: none;
   }
@@ -639,10 +656,21 @@ footer {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 3px;
+    right: 29px;
     border: #0065fc solid 1px;
     background-color: #0065fc;
     color: white;
     border-radius: 13px;
+  }
+  .Title-section{
+    width: 90%;
+  }
+  .Activity-marseille{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 425px){
+  .Filter-area{
+    min-width: 0;
   }
 }
