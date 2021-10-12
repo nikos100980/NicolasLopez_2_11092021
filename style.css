@@ -143,7 +143,7 @@ a {
 .input-search {
   border: none;
   height: 48px;
-  width: 244px;
+  width: 216px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
@@ -578,7 +578,7 @@ footer {
     padding-top: 10px;
   }
   .Title-pop {
-    width: 94%;
+    width: 71%;
   }
   .Pop-card {
     width: 70%;
@@ -623,28 +623,31 @@ footer {
     width: 100%;
   }
   .Title-section {
-    width: 90%;
+    width: 70%;
   }
   .visuel-logement {
-    width: 94%;
-    height: 214px;
+    width: 70%;
+    height: 231px;
   }
   .Visual-Card1 {
-    height: 126px;
+    height: 148px;
   }
   .Activity-marseille {
     margin: 0;
   }
   .Pop-card {
-    width: 94%;
+    width: 70%;
   }
   .Activity-bloc14,
   .Little-card26,
   .Little-card35 {
-    height: 214px;
+    height: 231px;
   }
   .Activity-bloc2356 {
     height: auto;
+  }
+  .Bloc-activityMarseille{
+    padding-left: 89px;
   }
 }
 
@@ -718,6 +721,9 @@ footer {
   }
   .Activity-marseille {
     margin: 0;
+  }
+  .Title-pop{
+    width: 92%;
   }
   .Pop-card {
     width: 94%;
