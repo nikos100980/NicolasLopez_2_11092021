@@ -160,6 +160,7 @@ a {
   border: #0065fc solid 1px;
   background-color: #0065fc;
   color: white;
+  cursor: pointer;
   border-radius: 0px 15px 15px 0px;
 }
 .button-search:hover {
@@ -170,6 +171,7 @@ a {
 }
 .Device-search {
   display: none;
+  cursor: pointer;
 }
 
 .Filter-area {
